@@ -1,6 +1,6 @@
 """
-Name(s):
-Name of Project:
+Name(s): Juliet Tuton
+Name of Project: Hangman
 """
 #random library used to pick a word at random
 import random
@@ -18,10 +18,10 @@ num = random.randint(0,9)
 won = 1
 #print statement are here so we can see whats going on
 #choosew a random word
-print(possible_words[num])
+
 choice = possible_words[num]
 #shows the length of that word
-print(len(choice))
+
 
 #create an empty list called letters_guessed
 letters_guessed = []
@@ -64,3 +64,6 @@ while(attempts > 0):
   if won == 1:
     print("you win the word was", choice)
     attempts = 0
+
+  if attempts < 1:
+    print("sorry, you lose. the word was", choice)
